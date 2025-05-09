@@ -10,7 +10,7 @@ wget https://huggingface.co/datasets/TIGER-Lab/MMEB-eval/resolve/main/images.zip
 unzip images.zip -d eval_images/
 ```
 
-1. To evaluate our model
+1. To evaluate our model on an MMEB dataset (e.g., MSCOCO_i2t), run:
 ```bash 
 python  eval_mmeb.py  --model_name raghavlite/B3_Qwen2_7B --encode_output_path  ./MMEB-evaloutputs/B2_Qwen2_7B/  --pooling  eos  --normalize  True  --lora  --lora_r  8  --bf16  --dataset_name  TIGER-Lab/MMEB-eval  --subset_name  MSCOCO_i2t  --dataset_split  test  --per_device_eval_batch_size  4  --image_dir  eval_images/  --tgt_prefix_mod
 ```
