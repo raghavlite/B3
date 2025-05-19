@@ -1,6 +1,10 @@
 # B3
 
-This repo contains the code and data for B3. More details coming soon.  
+This repo contains the code and data for B3.
+
+Preprint Out: https://arxiv.org/pdf/2505.11293
+
+More details coming soon!
 
 ## Inference & Evaluation
 
