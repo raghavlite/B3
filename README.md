@@ -4,7 +4,13 @@ This repo contains the code and data for B3.
 
 Preprint Out: https://arxiv.org/pdf/2505.11293
 
-More details coming soon!
+## 🧠 Trained Models
+
+| Model Scale | Hugging Face Model Hub |
+|-------------|-------------------------|
+| 2B          | [raghavlite/B3_Qwen2_2B](https://huggingface.co/raghavlite/B3_Qwen2_2B) |
+| 8B          | [raghavlite/B3_Qwen2_7B](https://huggingface.co/raghavlite/B3_Qwen2_7B) |
+
 
 ## Inference & Evaluation
 
