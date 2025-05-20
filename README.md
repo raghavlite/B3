@@ -1,6 +1,6 @@
 # B3
 
-This repo contains the code and data for B3.
+This repo contains the code and data for B3. More details coming soon.
 
 Preprint Out: https://arxiv.org/pdf/2505.11293
 
