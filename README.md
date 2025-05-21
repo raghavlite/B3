@@ -1,6 +1,10 @@
 # B3
 
-This repo contains the code and data for B3. More details coming soon.
+This repo contains the code and data for B3. The model attains state-of-the-art results on Massive Multimodal Embeddings Benchmark (MMEB). Specifically, for retrieval, our model significantly outperforms other methods. Our 2B model surpasses the performance of several existing 7B models. More details coming soon. 
+
+![Model Architecture](./ranking.png)
+
+
 
 Preprint Out: https://arxiv.org/pdf/2505.11293
 
