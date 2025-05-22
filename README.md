@@ -33,7 +33,7 @@ python  eval_mmeb.py  --model_name raghavlite/B3_Qwen2_7B --encode_output_path  
 
 ## Running on your Data
 
-To run B3 models on your dataset, just repurpose the **eval_mmeb.py** code. Lines 120-126 create a query dataset. Lines 127-138 create a target dataset. Ensure your data is in the same format as a reference query and dataset (Eg. MSCOCO_i2t or MSCOCO_t2i). Lines 159-160 extract query embeddings and Lines 172-172 extract target embeddings. We will soon release a much simpler script for general purpose usage.
+To run B3 models on your dataset, just repurpose the **eval_mmeb.py** code. It is quick and simple to do. Lines 120-126 create a query dataset. Lines 127-138 create a target dataset. Ensure your data is in the same format as a reference query and target dataset (Eg. MSCOCO_i2t or MSCOCO_t2i). Lines 159-160 extract query embeddings and Lines 172-172 extract target embeddings. We will soon release a much simpler script for general purpose usage.
 
 ## Acknowledgement
 - We have adapted code from [VLM2Vec]([https://github.com/TIGER-AI-Lab/VLM2Vec]).
