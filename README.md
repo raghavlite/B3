@@ -2,12 +2,12 @@
 
 Preprint Out: https://arxiv.org/pdf/2505.11293
 
-This repo contains the code and data for **Breaking the Batch Barrier (B3) of Contrastive Learning via Smart Batch Mining** (B3). The model attains state-of-the-art results on Massive Multimodal Embeddings Benchmark (MMEB). Specifically, for retrieval, our model significantly outperforms other methods. Our 2B model surpasses the performance of several existing 7B models. More details coming soon. 
+This repo contains the code and data for **Breaking the Batch Barrier (B3) of Contrastive Learning via Smart Batch Mining** (B3). The model attains state-of-the-art results on Massive Multimodal Embeddings Benchmark (MMEB). Specifically, for retrieval, our model significantly outperforms other methods. Our 2B model surpasses the performance of several existing 7B models. The following figure details our methodology.
 
 <img src="./methodology.png" alt="Model Architecture" width="800">
 
 
-
+Our model ranks top on the [MMEB Leaderboard](https://huggingface.co/spaces/TIGER-Lab/MMEB-Leaderboard).
 ![Ranking](./ranking.png)
 
 
