@@ -7,6 +7,9 @@ This repo contains the code and data for **Breaking the Batch Barrier (B3) of Co
 <img src="./methodology.png" alt="Model Architecture" width="800">
 </div>
 
+---
+
+  
 Our model ranks top on the [MMEB Leaderboard](https://huggingface.co/spaces/TIGER-Lab/MMEB-Leaderboard) on May 15th, 2025.
 ![Ranking](./ranking.png)
 
