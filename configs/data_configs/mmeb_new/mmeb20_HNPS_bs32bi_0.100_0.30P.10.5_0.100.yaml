@@ -1,0 +1,179 @@
+ImageNet_1K:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: ImageNet_1K_HNPS_Metis_bs32bi_0.30P_10_5_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 100000
+    weight: 1
+
+N24News:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: N24News_HNPS_Metis_bs32bi_0.30P_10_5_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 50000
+    weight: 1
+
+HatefulMemes:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: HatefulMemes_HNPS_Metis_bs32bi_0.30P_10_5_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 10000
+    weight: 0.5
+
+VOC2007:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: VOC2007_HNPS_Metis_bs32bi_0.30P_10_5_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 10000
+    weight: 0.5
+
+SUN397:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: SUN397_HNPS_Metis_bs32bi_0.30P_10_5_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 20000
+    weight: 0.5
+
+OK-VQA:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: OK-VQA_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 10000
+    weight: 0.5
+
+A-OKVQA:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: A-OKVQA_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 20000
+    weight: 0.5
+
+DocVQA:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: DocVQA_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 40000
+    weight: 1
+
+InfographicsVQA:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: InfographicsVQA_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 25000
+    weight: 0.5
+
+ChartQA:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: ChartQA_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 28000
+    weight: 0.5
+
+Visual7W:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: Visual7W_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 70000
+    weight: 1
+
+VisDial:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: VisDial_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 130000
+    weight: 1
+
+CIRR:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: CIRR_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 30000
+    weight: 0.5
+
+VisualNews_t2i:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: VisualNews_t2i_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 100000
+    weight: 1
+
+VisualNews_i2t:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: VisualNews_i2t_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 100000
+    weight: 1
+
+MSCOCO_t2i:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: MSCOCO_t2i_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 100000
+    weight: 1
+
+MSCOCO_i2t:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: MSCOCO_i2t_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 120000
+    weight: 1
+
+NIGHTS:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: NIGHTS_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 20000
+    weight: 0.5
+
+WebQA:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: WebQA_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 20000
+    weight: 0.5
+
+MSCOCO:
+    dataset_parser: mmeb
+    dataset_name: ./MMEB-train2
+    subset_name: MSCOCO_HNPS_Metis_bs32bi_0.100_qwen2b
+    dataset_split: original
+    image_dir: ../VLM2Vec/MMEB-train
+    num_sample_per_subset: 100000
+    weight: 1

@@ -1,0 +1,24 @@
+.idea/
+.vscode/
+.myenv/
+__pycache__/
+
+# Custom directory exclusions
+archive/
+wandb/
+MMEB-outputs/
+MMEB-trainedmodels/
+.gitignore
+Nlogs/
+run_inf.sh
+MMEB-evaloutputs/
+Nlogs_extra/
+MMEB-train/
+*.jpg
+sizes.tsv
+sizes.txt
+self_evaluate/
+shell/
+UniME/
+scripts/
+scripts/*
