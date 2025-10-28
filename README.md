@@ -65,7 +65,7 @@ torchrun --nproc_per_node=8 --master_port=2215 --max_restarts=0 train.py \
 | `--sdibn` | Enables batches to be mined from the same dataset (e.g., all examples in a batch are mined from `MSCOCO_i2t`). |
 | `--odibn` | Applies B3 clustering. Picks `chunk_size`-sized clusters and puts random `(batch_size / chunk_size)` clusters in the same batch. |
 | `--pos_only` | Removes hard negatives and only relies on in-batch negatives. By default, `--odibn` uses hard negatives from `MMEB-train2` datasets. |
-| `--dataset_config configs/data_configs/mmeb_new/mmeb20_HNPS_bs32bi_30.130_30P.10.5_70.170_qwen2b.yaml` | Path to dataset configuration file. |
+| `--dataset_config $path | Path to training dataset configuration file. |
 
 ## Inference & Evaluation
 
