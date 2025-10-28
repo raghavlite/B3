@@ -27,8 +27,10 @@ Our model ranks top on the [MMEB Leaderboard](https://huggingface.co/spaces/TIGE
 
 
 ## Batch mining and Training data creation
-Look at the [data_processing/](data_processing/) folder. This tstep is already done and the data provided in MMEB-train2
+Look at the [data_processing/](data_processing/) folder. 
+This step has already been completed, and the processed data is available in MMEB-train2.
 
+---
 
 ## Training
 
@@ -54,7 +56,7 @@ torchrun --nproc_per_node=8 --master_port=2215 --max_restarts=0 train.py \
     --sdibn --odibn --chunk_size 32
 ```
 
----
+
 
 #### Key Parameters
 
@@ -66,6 +68,9 @@ torchrun --nproc_per_node=8 --master_port=2215 --max_restarts=0 train.py \
 | `--odibn` | Applies B3 clustering. Picks `chunk_size`-sized clusters and puts random `(batch_size / chunk_size)` clusters in the same batch. |
 | `--pos_only` | Removes hard negatives and only relies on in-batch negatives. By default, `--odibn` uses hard negatives from `MMEB-train2` datasets. |
 | `--dataset_config $path` | Path to training dataset configuration file. |
+
+
+---
 
 ## Inference & Evaluation
 
