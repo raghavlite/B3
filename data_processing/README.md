@@ -18,7 +18,7 @@ python modify_posnegtext_instruction2.py
 
 Multiple clustering files with different parameters have already been created and provided in **`B3/MMEB-train2`**.  
 For example,  
-`bs32bi_30.130_qwen2b` means:
+`*_bs32bi_30.130_qwen2b` means:
 - Teacher model: `vlm2vecqwen2b`
 - Cluster size: $K = 32$
 - Parameters: $p = 30$, $m = 100$
