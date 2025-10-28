@@ -1,7 +1,7 @@
 torch==2.4.1
 numpy==1.26.4
 torchvision
-transformers
+transformers==4.48.1
 huggingface-hub
 peft
 accelerate
