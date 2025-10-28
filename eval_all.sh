@@ -33,5 +33,5 @@ echo "Dataset at index $index: $task: $model, ${output_path}"
 
 
 # ./run_inf.sh python eval_mmeb.py --model_name ${model} --encode_output_path ${output_path} --pooling eos --normalize True --lora --lora_r 8 --bf16 --dataset_name TIGER-Lab/MMEB-eval --subset_name ${task} --dataset_split test --per_device_eval_batch_size 4 --image_dir ../VLM2Vec/MMEB-eval/eval_images/
-./run_inf.sh python eval_mmeb.py --model_name ${model} --encode_output_path ${output_path} --pooling eos --normalize True --lora --lora_r 8 --bf16 --dataset_name TIGER-Lab/MMEB-eval --subset_name ${task} --dataset_split test --per_device_eval_batch_size 4 --image_dir ../VLM2Vec/MMEB-eval/eval_images/ --tgt_prefix_mod
 # ./run_inf.sh python eval_mmeb.py --model_name ${model} --encode_output_path ${output_path} --pooling eos --normalize True --bf16 --dataset_name TIGER-Lab/MMEB-eval --subset_name ${task} --dataset_split test --per_device_eval_batch_size 4 --image_dir ../VLM2Vec/MMEB-eval/eval_images/ --tgt_prefix_mod
+./run_inf.sh python eval_mmeb.py --model_name ${model} --encode_output_path ${output_path} --pooling eos --normalize True --lora --lora_r 8 --bf16 --dataset_name TIGER-Lab/MMEB-eval --subset_name ${task} --dataset_split test --per_device_eval_batch_size 4 --image_dir ../VLM2Vec/MMEB-eval/eval_images/ --tgt_prefix_mod

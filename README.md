@@ -25,6 +25,26 @@ Our model ranks top on the [MMEB Leaderboard](https://huggingface.co/spaces/TIGE
 | 8B          | [raghavlite/B3_Qwen2_7B](https://huggingface.co/raghavlite/B3_Qwen2_7B) |
 
 
+
+## Batch mining and Training data creation
+Look at the [data_processing/](data_processing/) folder. This tstep is already done and the data provided in MMEB-train2
+
+
+## Training
+The training command below is configured for 8 GPUs, but it can be easily modified to run on 4 GPUs. This exact training command was used to train the B3++ Qwen2b.
+```
+torchrun --nproc_per_node=8 --master_port=2215 --max_restarts=0 train.py --output_dir ./MMEB-trainedmodels/0425_InstuctionP_odibn32_sdibn_20D_HNPS_Metis_bs1024.32bi_30.130_30P.10.5_70.170_qwen2b_2k_dy --lora --lora_r 8 --model_name Qwen/Qwen2-VL-2B-Instruct --bf16 --pooling eos --normalize True --temperature 0.02 --dataloader_num_workers 0 --dataset_config configs/data_configs/mmeb_new/mmeb20_HNPS_bs32bi_30.130_30P.10.5_70.170_qwen2b.yaml --grad_cache True --per_device_train_batch_size 128 --gc_q_chunk_size 128 --gc_p_chunk_size 128 --gc_dynamic_limit 64 --lr_scheduler_type linear --learning_rate 1e-4 --max_steps 2000 --warmup_steps 200 --save_steps 1000 --logging_steps 1 --save_safetensors False --remove_unused_columns False --resume_from auto --resize_use_processor True --interleave_batch_size 1 --ddp_timeout 14400 --ignore_data_skip true --eval_steps 200 --eval_strategy steps --eval_dataset_name TIGER-Lab/MMEB-eval --eval_subset_name MSCOCO_i2t --eval_image_dir ../VLM2Vec/MMEB-eval/eval_images --per_device_eval_batch_size 2 --sdibn --odibn --chunk_size 32
+```
+
+### Key Parameters
+Argument	Description
+--chunk_size 32  #picks 32 sized clusters from the dataset file. Used in odibn later.
+--grad_cache, --gc_*	# Enables dynamic grad cache chunking. Values should not need changing unless running on low memory gpus.
+--sdibn # Enables batches to be mined form the same dataset(Eg. all examples int eh batch are mined from MSCOCO_i2t)
+--odibn	# The setting that applies B3 clustering. Picks chunk_size sized clusters and puts random #(batch_size/chunk_size) clusters in the same batch  
+--pos_only # adding this tag removes hard negatives and only relies on in-batch negatives. By default, --odibn uses the hard-negatives mentioned int he datasets from MMEB-train2.
+--dataset_config configs/data_configs/mmeb_new/mmeb20_HNPS_bs32bi_30.130_30P.10.5_70.170_qwen2b.yaml
+
 ## Inference & Evaluation
 
 Download the image file zip from huggingface
@@ -37,6 +57,7 @@ unzip images.zip -d eval_images/
 ```bash 
 python  eval_mmeb.py  --model_name raghavlite/B3_Qwen2_7B --encode_output_path  ./MMEB-evaloutputs/B2_Qwen2_7B/  --pooling  eos  --normalize  True  --lora  --lora_r  8  --bf16  --dataset_name  TIGER-Lab/MMEB-eval  --subset_name  MSCOCO_i2t  --dataset_split  test  --per_device_eval_batch_size  4  --image_dir  eval_images/  --tgt_prefix_mod
 ```
+
 
 ## Running on your Data
 
